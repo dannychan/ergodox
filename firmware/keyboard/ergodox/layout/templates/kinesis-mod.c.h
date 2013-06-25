@@ -71,6 +71,8 @@ KEYS__LAYER__NUM_PUSH(10, 3);
 KEYS__LAYER__NUM_POP(10);
 void P(m_arrowL)(void) { KF(type_string)( PSTR("->") ); }
 void R(m_arrowL)(void) {}
+void P(m_sep)(void) { KF(type_string)( PSTR("::") ); }
+void R(m_sep)(void) {}
 
 // ----------------------------------------------------------------------------
 // layout
@@ -91,7 +93,7 @@ static _layout_t _layout = {
    grave,        q,        w,        e,        r,        t,  bkslash,
      tab,        a,        s,        d,        f,        g,
   shiftL,        z,        x,        c,        v,        b, lpupo1l1,
-   pause,      m_arrowL, nop,      nop,      nop,
+   pause,    m_arrowL, m_sep,      nop,      nop,
                                                                ctrlL,     altL,
                                                        nop,      nop,     home,
                                                         bs,     guiL,      nop,

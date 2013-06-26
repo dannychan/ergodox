@@ -126,7 +126,7 @@ static _layout_t _layout = {
 // right hand ..... ......... ......... ......... ......... ......... .........
             transp,       F7,       F8,       F9,      F10,      F11,      F12,
             transp,   transp,   transp,   transp,   transp,   transp,   transp,
-                      arrowL,   arrowU,   arrowD,   arrowR,   transp,   transp,
+                      arrowL,   arrowD,   arrowU,   arrowR,   transp,   transp,
             transp,   transp,   transp,   transp,   transp,   transp,   transp,
                                 transp,   transp,   transp,   transp,   transp,
   transp,   transp,

@@ -83,6 +83,14 @@ void keys__press__m_copy(void) {
     usb__kb__set_key(false, KEYBOARD__c_C);
 }
 void R(m_copy)(void) {}
+void keys__press__m_paste(void) {
+    usb__kb__set_key(true, KEYBOARD__LeftControl);
+    usb__kb__set_key(true, KEYBOARD__v_V);
+    usb__kb__send_report();
+    usb__kb__set_key(false, KEYBOARD__LeftControl);
+    usb__kb__set_key(false, KEYBOARD__v_V);
+}
+void R(m_paste)(void) {}
 
 // ----------------------------------------------------------------------------
 // layout
@@ -133,7 +141,7 @@ static _layout_t _layout = {
                                                     transp,   transp,   transp,
 // right hand ..... ......... ......... ......... ......... ......... .........
             transp,       F7,       F8,       F9,      F10,      F11,      F12,
-            transp,   m_copy,   transp,   transp,   transp,   transp,   transp,
+            transp,   m_copy,   transp,   transp,   transp,  m_paste,   transp,
                       arrowL,   arrowD,   arrowU,   arrowR,   transp,   transp,
             transp,   transp,   transp,   transp,   transp,   transp,   transp,
                                 transp,   transp,   transp,   transp,   transp,

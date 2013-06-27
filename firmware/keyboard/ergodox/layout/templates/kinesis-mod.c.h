@@ -99,6 +99,14 @@ void keys__press__m_word(void) {
     usb__kb__set_key(false, KEYBOARD__RightArrow);
 }
 void R(m_word)(void) {}
+void keys__press__m_bword(void) {
+    usb__kb__set_key(true, KEYBOARD__LeftControl);
+    usb__kb__set_key(true, KEYBOARD__LeftArrow);
+    usb__kb__send_report();
+    usb__kb__set_key(false, KEYBOARD__LeftControl);
+    usb__kb__set_key(false, KEYBOARD__LeftArrow);
+}
+void R(m_bword)(void) {}
 
 // ----------------------------------------------------------------------------
 // layout
@@ -142,7 +150,7 @@ static _layout_t _layout = {
    btldr,       F1,       F2,       F3,       F4,       F5,       F6,
   transp,   transp,   m_word,   transp,   transp,   transp,   transp,
   transp,   transp,   transp,   transp,   transp,   transp,
-  transp,   transp,   transp,   transp,   transp,   transp,   transp,
+  transp,   transp,   transp,   transp,   transp,  m_bword,   transp,
   transp,   transp,   transp,   transp,   transp,
                                                               transp,   transp,
                                                     transp,   transp,   transp,

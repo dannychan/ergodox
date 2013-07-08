@@ -150,7 +150,7 @@ static _layout_t _layout = {
    btldr,       F1,       F2,       F3,       F4,       F5,       F6,
   transp,   transp,   m_word,   transp,   transp,   transp,   transp,
   transp,   transp,   transp,   transp,   transp,   transp,
-  transp,   transp,   transp,   transp,   transp,  m_bword,   transp,
+  transp,   transp,      del,   transp,   transp,  m_bword,   transp,
   transp,   transp,   transp,   transp,   transp,
                                                               transp,   transp,
                                                     transp,   transp,   transp,

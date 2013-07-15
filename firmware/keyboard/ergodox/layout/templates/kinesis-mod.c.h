@@ -115,6 +115,8 @@ void keys__press__m_undo(void) {
     usb__kb__set_key(false, KEYBOARD__z_Z);
 }
 void R(m_undo)(void) {}
+void P(m_aries)(void) { KF(type_string)( PSTR("♈") ); }
+void R(m_aries)(void) {}
 
 // ----------------------------------------------------------------------------
 // layout
@@ -135,7 +137,7 @@ static _layout_t _layout = {
    grave,        q,        w,        e,        r,        t,  bkslash,
      tab,        a,        s,        d,        f,        g,
   shiftL,        z,        x,        c,        v,        b, lpupo1l1,
-   pause,    m_arrowL, m_sep, m_fatcomma,    nop,
+   pause,    m_arrowL, m_sep, m_fatcomma,m_aries,
                                                                ctrlL,     altL,
                                                        nop,      nop,     home,
                                                         bs,     guiL,      nop,
@@ -158,7 +160,7 @@ static _layout_t _layout = {
    btldr,       F1,       F2,       F3,       F4,       F5,       F6,
   transp,   transp,   m_word,   transp,   transp,   transp,   transp,
   transp,   transp,   transp,   transp,   transp,   transp,
-  transp,   transp,      del,   transp,   transp,  m_bword,   transp,
+  transp, lpupo2l2,      del,   transp,   transp,  m_bword,   transp,
   transp,   transp,   transp,   transp,   transp,
                                                               transp,   transp,
                                                     transp,   transp,   transp,
@@ -179,7 +181,7 @@ static _layout_t _layout = {
 // macro, unused,
        K,    nop,
 // left hand ...... ......... ......... ......... ......... ......... .........
-   btldr,      nop,      nop,      nop,      nop,      nop,      nop,
+     nop,      m_aries,  nop,      nop,      nop,      nop,      nop,
      nop,      nop,      nop,      nop,      nop,      nop,      nop,
      nop,      nop,      nop,      nop,      nop,      nop,
      nop,      nop,      nop,      nop,      nop,      nop,      nop,

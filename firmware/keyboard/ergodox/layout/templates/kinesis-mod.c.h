@@ -137,7 +137,7 @@ static _layout_t _layout = {
    grave,        q,        w,        e,        r,        t,  bkslash,
      tab,        a,        s,        d,        f,        g,
   shiftL,        z,        x,        c,        v,        b, lpupo1l1,
-   pause,    m_arrowL, m_sep, m_fatcomma,m_aries,
+   pause,    m_arrowL, m_sep, m_fatcomma,    nop,
                                                                ctrlL,     altL,
                                                        nop,      nop,     home,
                                                         bs,     guiL,      nop,

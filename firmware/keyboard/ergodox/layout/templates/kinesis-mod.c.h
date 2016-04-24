@@ -133,23 +133,23 @@ static _layout_t _layout = {
 // macro, unused,
        K,    nop,
 // left hand ...... ......... ......... ......... ......... ......... .........
-     esc,        1,        2,        3,        4,        5,        6,
-   grave,        q,        w,        e,        r,        t,  bkslash,
-     tab,        a,        s,        d,        f,        g,
-  shiftL,        z,        x,        c,        v,        b, lpupo1l1,
-   pause,    m_arrowL, m_sep, m_fatcomma,    nop,
-                                                               ctrlL,     altL,
-                                                       nop,      nop,     home,
-                                                        bs,     guiL,      nop,
+     tilde,        exclam,        amp,        pipe,        at,        asterisk,        esc,
+   tab,        q,        w,        e,        r,        t,  lpupo1l1,
+     ctrlL,        a,        s,        d,        f,        g,
+  shiftL,        z,        x,        c,        v,        b, transp,
+   grave,    quote, guiL, arrowL,    arrowR,
+                                                               altL,     transp,
+                                                       nop,      nop,     transp,
+                                                        space,     enter,      guiL,
 // right hand ..... ......... ......... ......... ......... ......... .........
-               nop,        7,        8,        9,        0,     dash,    equal,
-             brktL,        y,        u,        i,        o,        p,    brktR,
+               esc,        bkslash,        braceL,        braceR,        parenL,     parenR,    equal,
+             lpupo1l1,        y,        u,        i,        o,        p,    dash,
                            h,        j,        k,        l,  semicol,    quote,
-          lpupo1l1,        n,        m,    comma,   period,    slash,   shiftR,
-                                   nop,      nop,      nop,      nop,     guiR,
-    altR,    ctrlR,
-   pageU,      nop,      nop,
-   pageD,    enter,    space  ),
+          transp,        n,        m,    comma,   period,    slash,   shiftR,
+                                   arrowU,      arrowD,      brktL,      brktL,     altL,
+    volUp,    mute,
+   volDown,      nop,      nop,
+   guiL,    del,    bs  ),
 
 // ............................................................................
 
@@ -157,18 +157,18 @@ static _layout_t _layout = {
 // macro, unused,
        K,    nop,
 // left hand ...... ......... ......... ......... ......... ......... .........
-   btldr,       F1,       F2,       F3,       F4,       F5,       F6,
-  transp,   transp,   m_word,   transp,   transp,   transp,   transp,
+   transp,       1,       2,       3,       4,       5,       transp,
+  transp,   transp,   transp,   transp,   transp,   transp,   transp,
   transp,   transp,   transp,   transp,   transp,   transp,
-  transp,  numPush,      del,   transp,   transp,  m_bword,   transp,
-  transp,   transp,   transp,   transp,  numPush,
+  transp,  transp,      transp,   transp,   transp,  transp,   transp,
+  transp,   transp,   transp,   transp,  transp,
                                                               transp,   transp,
                                                     transp,   transp,   transp,
                                                     transp,   transp,   transp,
 // right hand ..... ......... ......... ......... ......... ......... .........
-            transp,       F7,       F8,       F9,      F10,      F11,      F12,
-            transp,   m_copy,   m_undo,   transp,   transp,  m_paste,   transp,
-                      arrowL,   arrowD,   arrowU,   arrowR,   transp,   transp,
+            transp,       6,       7,       8,      9,      0,      transp,
+            transp,   transp,   transp,   transp,   transp,  transp,   transp,
+                      transp,   transp,   transp,   transp,   transp,   transp,
             transp,   transp,   transp,   transp,   transp,   transp,   transp,
                                 transp,   transp,   transp,   transp,   transp,
   transp,   transp,
@@ -177,31 +177,7 @@ static _layout_t _layout = {
 
 // ............................................................................
 
-    MATRIX_LAYER(  // layer 2 : keyboard functions
-// macro, unused,
-       K,    nop,
-// left hand ...... ......... ......... ......... ......... ......... .........
-     nop,      m_aries,  nop,      nop,      nop,      nop,      nop,
-     nop,      nop,      nop,      nop,      nop,      nop,      nop,
-     nop,      nop,      nop,      nop,      nop,      nop,
-     nop,      nop,      nop,      nop,      nop,      nop,      nop,
-     nop,      nop,      nop,      nop,      nop,
-                                                                 nop,      nop,
-                                                       nop,      nop,      nop,
-                                                       nop,      nop,      nop,
-// right hand ..... ......... ......... ......... ......... ......... .........
-               nop,      nop,      nop,      nop,      nop,      nop,      nop,
-               nop,      nop,      nop,      nop,      nop,      nop,      nop,
-                         nop,      nop,      nop,      nop,      nop,      nop,
-               nop,      nop,      nop,      nop,      nop,      nop,      nop,
-                                   nop,      nop,      nop,      nop,      nop,
-     nop,      nop,
-     nop,      nop,      nop,
-     nop,      nop,      nop  ),
-
-// ............................................................................
-
-    MATRIX_LAYER(  // layer 3 : numpad
+    MATRIX_LAYER(  // layer 2 : numpad
 // macro, unused,
        K,    nop,
 // left hand ...... ......... ......... ......... ......... ......... .........
@@ -209,19 +185,19 @@ static _layout_t _layout = {
   transp,   transp,   transp,   transp,   transp,   transp,   transp,
   transp,   transp,   transp,   transp,   transp,   transp,
   transp,   transp,   transp,   transp,   transp,   transp,   transp,
-  transp,      ins,   transp,   transp,   numPop,
+  transp,   transp,   transp,   transp,   transp,
                                                               transp,   transp,
                                                     transp,   transp,   transp,
                                                     transp,   transp,   transp,
 // right hand ..... ......... ......... ......... ......... ......... .........
-            numPop,   transp,   numPop,    equal,    kpDiv,    kpMul,   transp,
-            transp,   transp,      kp7,      kp8,      kp9,    kpSub,   transp,
-                      transp,      kp4,      kp5,      kp6,    kpAdd,   transp,
-            transp,   transp,      kp1,      kp2,      kp3,  kpEnter,   transp,
-                                transp,   transp,   period,  kpEnter,   transp,
+            transp,   transp,      transp,      transp,      transp,    transp,   transp,
+            transp,   transp,      transp,      transp,      transp,    transp,   transp,
+                      transp,      transp,      transp,      transp,    transp,   transp,
+            transp,   transp,      transp,      transp,      transp,    transp,   transp,
+                                   transp,      transp,      transp,    transp,   transp,
   transp,   transp,
   transp,   transp,   transp,
-  transp,   transp,      kp0  ),
+  transp,   transp,   transp  ),
 
 // ............................................................................
 };
